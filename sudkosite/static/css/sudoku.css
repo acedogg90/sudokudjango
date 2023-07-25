@@ -1,0 +1,37 @@
+/* Add some basic styling to the table */
+
+table {
+    border-collapse: collapse;
+  }
+  
+  td {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid #000;
+    font-size: 20px;
+  }
+  
+  /* Apply bold border to create Sudoku cell blocks */
+  td:nth-child(3n) {
+    border-right: 2px solid #000;
+  }
+  
+  tr:nth-child(3n) td {
+    border-bottom: 2px solid #000;
+  }
+  
+  /* Add thicker lines to create separators between 3x3 blocks */
+  tr:nth-child(3n+3) td {
+    border-bottom: 4px solid #000;
+  }
+  
+  td:nth-child(3n+3) {
+    border-right: 4px solid #000;
+  }
+  
+  /* Additional styling for empty cells (if desired) */
+  td:empty {
+    background-color: #f5f5f5;
+  }
+  
